@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 // Each defined constant iota increases by one
 const (
 	A = iota

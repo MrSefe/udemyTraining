@@ -11,8 +11,7 @@ func main() {
 
 	var b *int = &a
 
-
-	fmt.Println(b) // references to b's memory address and gives the address
+	fmt.Println(b)  // references to b's memory address and gives the address
 	fmt.Println(*b) // dereferences to location and gives the value
 
 	/*
