@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x [256]int
+
+	fmt.Println(len(x)) // Just prints out the length of the array
+	fmt.Println(x[42])
+	for i := 0; i < 256; i++ {
+		x[i] = i
+	}
+	for i, v := range x {
+		fmt.Printf("%v - %T - %b\n", v, v, v) // Print value - type - binary
+		if i > 50 {
+			break // Stop when first 50 have been printed
+		}
+	}
+}
